@@ -846,7 +846,7 @@ footer{background:var(--deep);border-top:1px solid rgba(107,63,160,0.15);display
       </div>
     </div>
     <div class="ls-addons"><span>Add-ons</span> &nbsp;second computer &amp; speakers for online guest · TV monitor · additional mics · video roll-ins · teleprompter · custom inquiry</div>
-    <a class="ls-quote" href="mailto:FlaskampCreative@pm.me?subject=Live%20Streaming%20Inquiry">Get a quote</a>
+    <a class="ls-quote" href="#" onclick="closeLS();openModal('livestream');return false;">Get a quote</a>
   </div>
 </div>
 
@@ -965,7 +965,8 @@ var modalConfigs={
   voice:{title:'Voice and Music',subtitle:'Inquire about Voice and Music',color:'#ffd700',subject:'Voice and Music Inquiry'},
   photo:{title:'Photography',subtitle:'Ask about Photography collaborators',color:'#9b5fd4',subject:'Photography Inquiry'},
   design:{title:'Graphic Design',subtitle:'Ask about Graphic Design collaborators',color:'#e040fb',subject:'Graphic Design Inquiry'},
-  web:{title:'Web Development',subtitle:'Ask about Web Development collaborators',color:'#b47fe0',subject:'Web Development Inquiry'}
+  web:{title:'Web Development',subtitle:'Ask about Web Development collaborators',color:'#b47fe0',subject:'Web Development Inquiry'},
+  livestream:{title:'Live Streaming',subtitle:'Request a live streaming quote',color:'#ffd700',subject:'Live Streaming Quote Request'}
 };
 function openModal(type){
   var cfg=modalConfigs[type]||modalConfigs.video;
